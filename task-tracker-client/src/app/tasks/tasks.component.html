@@ -1,0 +1,23 @@
+<div class="container">
+    <h2>Task List</h2>
+    <button (click)="navigateToAddTask()" class="btn btn-primary">Add Task</button>
+    <ul class="list-group mt-3">
+      <li *ngFor="let task of tasks" class="list-group-item">
+        <div>
+          <strong>{{ task.title }}</strong> - {{ task.status }}
+          <p>{{ task.description }}</p>
+          <small *ngIf="task.dueDate">Due: {{ task.dueDate | date }}</small>
+          <small *ngIf="!task.dueDate">Due: Not set</small>
+        </div>
+        <div>
+          <button (click)="editTask(task._id!)" class="btn btn-sm btn-warning">
+            Edit
+          </button>
+          <button (click)="deleteTask(task._id!)" class="btn btn-sm btn-danger">
+            Delete
+          </button>
+        </div>
+      </li>
+    </ul>
+  </div>
+  

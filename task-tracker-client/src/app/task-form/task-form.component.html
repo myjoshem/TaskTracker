@@ -1,0 +1,68 @@
+<div class="container">
+  <h2>{{ isEdit ? 'Edit Task' : 'Add Task' }}</h2>
+
+  <form [formGroup]="taskForm" (ngSubmit)="onSubmit()">
+    <!-- Title -->
+    <div class="form-group">
+      <label for="title">Title</label>
+      <input
+        id="title"
+        name="title"
+        formControlName="title"
+        class="form-control"
+        required
+      />
+      <div *ngIf="taskForm.get('title')?.invalid && taskForm.get('title')?.touched" class="text-danger">
+        Title is required.
+      </div>
+    </div>
+
+    <!-- Description -->
+    <div class="form-group">
+      <label for="description">Description</label>
+      <textarea
+        id="description"
+        name="description"
+        formControlName="description"
+        class="form-control"
+      ></textarea>
+    </div>
+
+    <!-- Status -->
+    <div class="form-group">
+      <label for="status">Status</label>
+      <select
+        id="status"
+        name="status"
+        formControlName="status"
+        class="form-control"
+      >
+        <option>Pending</option>
+        <option>Completed</option>
+      </select>
+    </div>
+
+    <!-- Due Date -->
+    <div class="form-group">
+      <label for="dueDate">Due Date</label>
+      <input
+        id="dueDate"
+        name="dueDate"
+        type="date"
+        formControlName="dueDate"
+        class="form-control"
+      />
+    </div>
+
+    <!-- Buttons -->
+    <div class="d-flex justify-content-between mt-3">
+      <!-- Submit Button -->
+      <button type="submit" class="btn btn-success" [disabled]="taskForm.invalid">
+        {{ isEdit ? 'Update' : 'Create' }}
+      </button>
+
+      <!-- Cancel Button -->
+      <button type="button" class="btn btn-secondary" (click)="onCancel()">Cancel</button>
+    </div>
+  </form>
+</div>

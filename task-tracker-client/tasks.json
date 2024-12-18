@@ -1,0 +1,75 @@
+[
+    {
+      "title": "Finish project report",
+      "description": "Complete the final report for the MEAN stack project.",
+      "status": "Pending",
+      "dueDate": "2024-12-20"
+    },
+    {
+      "title": "Team meeting",
+      "description": "Discuss project status and goals for next sprint.",
+      "status": "Pending",
+      "dueDate": "2024-12-18"
+    },
+    {
+      "title": "Code refactoring",
+      "description": "Refactor backend routes to improve performance.",
+      "status": "Pending",
+      "dueDate": "2024-12-22"
+    },
+    {
+      "title": "Database setup",
+      "description": "Set up MongoDB Atlas cluster for production.",
+      "status": "Completed",
+      "dueDate": "2024-12-15"
+    },
+    {
+      "title": "Write API documentation",
+      "description": "Document all API endpoints with Postman collection.",
+      "status": "Pending",
+      "dueDate": "2024-12-25"
+    },
+    {
+      "title": "Fix UI bugs",
+      "description": "Resolve known bugs in the task tracker UI.",
+      "status": "Completed",
+      "dueDate": "2024-12-10"
+    },
+    {
+      "title": "Add task editing feature",
+      "description": "Implement task editing functionality in Angular.",
+      "status": "Pending",
+      "dueDate": "2024-12-19"
+    },
+    {
+      "title": "Implement task deletion",
+      "description": "Allow users to delete tasks from the list.",
+      "status": "Completed",
+      "dueDate": "2024-12-12"
+    },
+    {
+      "title": "Prepare project demo",
+      "description": "Prepare for a live demo of the project.",
+      "status": "Pending",
+      "dueDate": "2024-12-30"
+    },
+    {
+      "title": "Set up CI/CD pipeline",
+      "description": "Create a CI/CD pipeline for automatic deployment.",
+      "status": "Pending",
+      "dueDate": "2025-01-05"
+    },
+    {
+      "title": "Write unit tests",
+      "description": "Add unit tests for task service and components.",
+      "status": "Pending",
+      "dueDate": "2024-12-27"
+    },
+    {
+      "title": "Deploy to production",
+      "description": "Deploy the final version of the application.",
+      "status": "Pending",
+      "dueDate": "2025-01-01"
+    }
+  ]
+  
